@@ -1,0 +1,17 @@
+#similaridade com 4 usuarios
+usuario_1={'sofa', 'mesa', 'silla',  'televisor'}
+usuario_2={'mesa', 'silla', 'cama','video game'}
+usuario_3={'mesa', 'silla', 'cama', 'televisor','video game','computador'}
+usuario_4={'mesa', 'cama', 'televisor','video game','computador','celular'}
+
+len(usuario_1.intersection(usuario_2)) # 3
+len(usuario_1.intersection(usuario_3)) # 2
+len(usuario_1.intersection(usuario_4)) # 2
+resultado_1=len(usuario_1.intersection(usuario_2))/len(usuario_1.union(usuario_2))
+resultado_2=len(usuario_1.intersection(usuario_3))/len(usuario_1.union(usuario_3))
+resultado_3=len(usuario_1.intersection(usuario_4))/len(usuario_1.union(usuario_4))
+print(resultado_1) 
+print(resultado_2) 
+print(resultado_3) 
+#o usuario 1 tem mais similaridade com o usuario 2, depois com o usuario 3 e por ultimo com o usuario 4.
+#assim podemos direcionar conteudos paarecidos com  para o usuario 1 e 2 
